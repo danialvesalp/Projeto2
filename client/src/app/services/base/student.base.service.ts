@@ -148,6 +148,20 @@ export class StudentBaseService {
 
 
     /**
+    * StudentService.outroteste
+    *   @returns String
+    *
+    */
+    outroteste(...params: any[]): Observable<any> {
+        return this.http
+            .get<any>(this.contextUrl + '/action/outroteste', {})
+            .pipe(
+                map(response => response)
+            );
+    }
+
+
+    /**
     * StudentService.teste
     *
     */

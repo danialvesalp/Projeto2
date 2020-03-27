@@ -257,6 +257,25 @@ paths:
           application/json:
             schema:
               $ref: "#/components/schemas/Student"
+  "/student/action/outroteste":
+    get:
+      x-skaffolder-id: 5e7e763e06e8563f3229b31f
+      x-skaffolder-name: outroteste
+      x-skaffolder-id-resource: 5e7e6f3e06e8563f3229b2f3
+      x-skaffolder-resource: Student
+      x-skaffolder-crudAction: 
+      x-skaffolder-crudType: 
+      x-skaffolder-description: 
+      x-skaffolder-returnDesc: 
+      x-skaffolder-returnType: String
+      x-skaffolder-url: /action/outroteste
+      x-skaffolder-roles:
+      summary: 
+      tags:
+        - Student
+      responses:
+        "200":
+          description: OK
   "/student/actions/teste":
     get:
       x-skaffolder-id: 5e7e6f5906e8563f3229b2ff

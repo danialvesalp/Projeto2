@@ -37,6 +37,9 @@ import { StudentBaseService } from './base/student.base.service';
 /**
  * Custom APIs
  *
+ * Service.outroteste
+ *	@returns String
+ *
  * Service.teste
  *
  */

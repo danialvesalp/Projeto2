@@ -139,7 +139,7 @@ const generatedModel = {
   async list() {
     return await generatedModel.model.find();
   },
-    
+      
   /**
   * StudentModel.update
   *   @description CRUD ACTION update

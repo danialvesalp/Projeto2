@@ -62,6 +62,7 @@ const generatedControllers = {
     router.delete(baseUrl + "/:id", authorize([]), StudentController.delete);
     router.get(baseUrl + "/:id", authorize([]), StudentController.get);
     router.get(baseUrl + "", authorize([]), StudentController.list);
+    router.get(baseUrl + "/action/outroteste", StudentController.outroteste);
     router.get(baseUrl + "/actions/teste", StudentController.teste);
     router.post(baseUrl + "/:id", authorize([]), StudentController.update);
   },
@@ -132,7 +133,7 @@ const generatedControllers = {
     }
   },
   
-    
+      
   /**
   * StudentModel.update
   *   @description CRUD ACTION update
@@ -151,6 +152,20 @@ const generatedControllers = {
   
   
   // Custom APIs
+
+  /**
+  * StudentModel.outroteste
+  *   @returns String
+  *
+  */
+  outroteste: async (req, res) => {
+    try {
+      res.json({});
+    } catch (err) {
+      const safeErr = ErrorManager.getSafeError(err);
+      res.status(safeErr.status).json(safeErr);
+    }
+  },
 
   /**
   * StudentModel.teste
